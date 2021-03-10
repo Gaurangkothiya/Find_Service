@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/ml-navbar-disney.css">
     <link rel="stylesheet" href="assets/css/Navbar-Apple.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
+	<link rel="stylesheet" href="validate.css">
 
     <title>Login</title>
     <!-- jQuery library -->
@@ -24,6 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="validate.js"></script>
 </head>
 
 <body>
@@ -43,17 +45,37 @@
             </div>
         </nav>
     </div>
+	<div class="login-page" style= "margin-top:-60px;">
+	<div class="form">
+
+			<form class="registration-form" method="POST" action="index.html" onsubmit="return validate()" style ="display:block;" >
+				<input type="text" name="user name" id="username" placeholder="user name" autocomplete="off">
+				<div id="div1"></div>
+				<input type="text" name="email" id="email" placeholder="email" autocomplete="off">
+				<div id="div2"></div>
+				<input type="password" name="password" id="password" placeholder="password" autocomplete="off">
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<div id="div3"></div>
+				<input type="password" name="confirm password" id="confirmPassword" placeholder="confirm password"
+					autocomplete="off">
+				<div id="div4"></div>
+				<input type="text" name="mobile number" id="mobileNumber" placeholder="mobile number"
+					autocomplete="off">
+				<div id="div5"></div>
+				<button type="submit" name="submit">Register</button>
+				<p class="message">Already Registered? <a href="Login.html">Login</a></p>
+			</form>
+
+			
+		</div>
+	</div>
 
 
 
 
 
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/smoothproducts.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    
 
 
 </body>
